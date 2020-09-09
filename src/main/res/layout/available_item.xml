@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/bg"
+    card_view:cardElevation="5dp"
+    app:contentPadding="10dp"
+    card_view:cardUseCompatPadding="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/list_view_bg">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/dresss1">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="start|center_vertical"
+                android:text="Linen Dress White pattern"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/brandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+
+                    android:text="BrandName"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="$119"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="10dp"
+                    android:text="DAY"/>
+
+                <TextView
+                    android:id="@+id/countrycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="12dp"
+                    android:text="US"/>
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="XS"/>
+
+                <RatingBar
+                    android:id="@+id/simpleRatingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:numStars="1"
+                    android:rating="1"
+                    android:layout_gravity="end|center_vertical"
+                    android:theme="@style/RatingBar"/> <!-- default rating-->
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="11dp"
+                    android:text="4.5"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/view">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/totalviewd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="12"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_gravity="start|center_vertical"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:gravity="start|center_vertical"-->
+<!--                >-->
+<!--            </TextView>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    android:text="26 Feb to 04march"
+                    android:visibility="gone"/>
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+                <TextView
+                    android:id="@+id/retailerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:text="Alice Ray"
+                    android:visibility="gone"/>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/round_shape"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/propic"-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:visibility="visible"-->
+<!--                        android:background="@drawable/pro_pic">-->
+
+<!--                    </ImageView>-->
+<!--                </LinearLayout>-->
+
+
+
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
